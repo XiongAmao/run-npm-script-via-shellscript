@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "sh ./script/build.sh $(node -e 'console.log(process.env.npm_config_env)')",
-    "build:prod": "echo 'this is prod'",
-    "build:test": "echo 'this is test'",
-    "build:fe": "node ./script/build.js"
+    "build:prod": "node ./prod.js",
+    "build:test": "node ./test.js",
+    "build:error": "node ./error.js",
+    "build:js": "node ./script/build-spawn.js",
+    "build:exec": "node ./script/build-exec.js"
   },
   "author": "",
   "license": "ISC"
