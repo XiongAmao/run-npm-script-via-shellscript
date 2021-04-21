@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "bash ./script/build.sh $(node -e 'console.log(process.env.npm_config_env)')",
+    "build": "sh ./script/build.sh $(node -e 'console.log(process.env.npm_config_env)')",
     "build:prod": "echo 'this is prod'",
     "build:test": "echo 'this is test'"
   },
