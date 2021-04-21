@@ -6,7 +6,8 @@
   "scripts": {
     "build": "sh ./script/build.sh $(node -e 'console.log(process.env.npm_config_env)')",
     "build:prod": "echo 'this is prod'",
-    "build:test": "echo 'this is test'"
+    "build:test": "echo 'this is test'",
+    "build:fe": "node ./script/build.js"
   },
   "author": "",
   "license": "ISC"
